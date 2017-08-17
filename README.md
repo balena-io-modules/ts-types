@@ -13,6 +13,14 @@ or PRed to the original projects.
 
 This is a monorepo using [Lerna](https://lernajs.io/). Read its docs for usage instructions.
 
+### Publishing
+
+Use `lerna publish` to publih all the packages with unrfeleased changes.
+
+**One tricky part** is that we want the typings version to exactly match the version of the original package.
+So when having the intractive lerna menu for the version selection please pick the custom option
+and provide the version by hand.
+
 ## Conventions
 
 When adding the new package follow these rules:
