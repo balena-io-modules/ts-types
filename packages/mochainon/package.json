@@ -1,6 +1,6 @@
 {
   "name": "@resin.io/types-mochainon",
-  "version": "0.0.0",
+  "version": "2.0.0",
   "dependencies": {
     "@types/chai": "^4.0.1",
     "@types/sinon": "^2.3.3"
