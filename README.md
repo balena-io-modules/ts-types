@@ -6,7 +6,7 @@ They're published as individual packages as `@resin.io/types-<package>`.
 These typings are not guaranteed to be complete as they're created primarily to serve the
 resin.io internal needs.
 
-As the typings here reach commpletion they may eventually be moved to DefinitelyTyped
+As the typings here reach completion they may eventually be moved to DefinitelyTyped
 or PRed to the original projects.
 
 ## Developing
@@ -24,9 +24,16 @@ When adding the new package follow these rules:
 	- `package.json` with the following fields:
 		- `"name": "@resin.io/types-<package>"`
 		- `"version"` - equal to the current version of the original package,
-		- `"dependencies"` - any `@types` these typings depend on (`import` from them),
-		- `"devDependencies"` - any packages needed for testing, as the very least it needs to include the original package **locked to the specific version**,
-		- `"scripts"` - define `test` script to be used before publishing,
+		- `"dependencies"` - any `@types` these typings depend on (`import` from them, or have a triple-slash ref to them),
+		- `"devDependencies"` - any packages needed for testing, as the very least it needs to include the original package **locked to the specific version**,*Note*: you **don't need** to include `typescript`, `tslint`, or `require-npm4-to-publish` as they're already the top-level repo-wide dependencies,
+		- `"scripts"` - here's the typical scripts section:
+			```json
+			"scripts": {
+				"test": "tslint **/*.ts && tsc",
+				"prepublish": "require-npm4-to-publish",
+				"prepublishOnly": "npm run test"
+			}
+			```
 		- `"types": "index.d.ts"`.
 	- `test-<package>.ts` - a file importing the original package and making use of the typed APIs. If it compiles the tests are considered passing. The simplest form is just importing the package.
 	- `.npmignore` to ignore publishing the tests and build artifatcs.
