@@ -1,7 +1,6 @@
 {
   "name": "@resin.io/types-hidepath",
-  "version": "0.0.0",
-  "dependencies": {},
+  "version": "1.0.1",
   "devDependencies": {
     "@types/node": "^8.0.0",
     "hidepath": "1.0.1"
