@@ -1,0 +1,18 @@
+{
+  "name": "@resin.io/types-hidepath",
+  "version": "0.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^8.0.0",
+    "hidepath": "1.0.1"
+  },
+  "scripts": {
+    "test": "tslint **/*.ts && tsc",
+    "prepublish": "require-npm4-to-publish",
+    "prepublishOnly": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/resin-io-modules/ts-types"
+  }
+}
