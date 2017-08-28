@@ -1,6 +1,6 @@
 {
   "name": "@resin.io/types-sample-package",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "devDependencies": {
     "@types/node": "^8.0.0",
     "sample-package": "1.0.0"
