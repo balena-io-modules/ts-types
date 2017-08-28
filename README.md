@@ -13,6 +13,8 @@ or PRed to the original projects.
 
 This is a monorepo using [Lerna](https://lernajs.io/). Read its docs for usage instructions.
 
+Use the `sample-package` folder as a template for the new folder under `packages`.
+
 ### Publishing
 
 Use `lerna publish` to publih all the packages with unrfeleased changes.
