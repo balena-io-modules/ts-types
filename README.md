@@ -17,10 +17,12 @@ Use the `sample-package` folder as a template for the new folder under `packages
 
 ### Publishing
 
-Use `lerna publish` to publih all the packages with unrfeleased changes.
+Use `lerna publish` to publish all the packages with unreleased changes.
 
 **One tricky part** is that we want the typings version to exactly match the version of the original package.
-So when having the intractive lerna menu for the version selection please pick the custom option
+It has two implications:
+1) DO NOT manually set the version in the package.json files,
+2) When having the intractive lerna menu for the version selection please pick the custom option
 and provide the version by hand.
 
 ## Conventions
@@ -46,9 +48,11 @@ When adding the new package follow these rules:
 			```
 		- `"types": "index.d.ts"`.
 	- `test-<package>.ts` - a file importing the original package and making use of the typed APIs. If it compiles the tests are considered passing. The simplest form is just importing the package.
-	- `.npmignore` to ignore publishing the tests and build artifatcs.
+	- `.npmignore` to ignore publishing the tests and repo noise.
 	- `tsconfig.json`.
 	- `tslint.json`, only if you want to override the defaults from the top-level config.
 	- `README.md`.
 
 Check the existing packages for examples.
+
+You can use the `sample-package` folder as a template.
