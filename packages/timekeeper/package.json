@@ -1,6 +1,6 @@
 {
   "name": "@resin.io/types-timekeeper",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "devDependencies": {
     "@types/node": "^8.0.0",
     "timekeeper": "1.0.0"
