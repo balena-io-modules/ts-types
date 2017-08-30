@@ -1,1 +1,1 @@
-# Resin.io TS typings for `sample-package`
+# Resin.io TS typings for `wary`

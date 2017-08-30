@@ -5,7 +5,7 @@ declare module 'wary' {
 		it: (
 			desc: string,
 			files: { [filename: string]: string },
-			action: () => any
+			action: (files: { [filename: string]: string }) => any
 		) => void;
 		run: () => Promise<void>;
 	}
