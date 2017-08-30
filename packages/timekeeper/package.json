@@ -1,0 +1,17 @@
+{
+  "name": "@resin.io/types-timekeeper",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@types/node": "^8.0.0",
+    "timekeeper": "1.0.0"
+  },
+  "scripts": {
+    "test": "tslint **/*.ts && tsc",
+    "prepublish": "require-npm4-to-publish",
+    "prepublishOnly": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/resin-io-modules/ts-types"
+  }
+}
