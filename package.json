@@ -8,5 +8,6 @@
   },
   "scripts": {
     "test": "lerna run test"
-  }
+  },
+  "version": "0.0.2"
 }
