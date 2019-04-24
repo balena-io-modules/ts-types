@@ -1,5 +1,5 @@
 {
-  "name": "@resin.io/types-mochainon",
+  "name": "@balena.io/types-mochainon",
   "version": "2.0.1",
   "dependencies": {
     "@types/chai": "^4.0.1",

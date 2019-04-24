@@ -1,5 +1,5 @@
 {
-  "name": "@resin.io/types-hidepath",
+  "name": "@balena.io/types-hidepath",
   "version": "1.0.1",
   "devDependencies": {
     "@types/node": "^8.0.0",

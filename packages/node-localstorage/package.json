@@ -1,5 +1,5 @@
 {
-  "name": "@resin.io/types-node-localstorage",
+  "name": "@balena.io/types-node-localstorage",
   "version": "1.3.0",
   "devDependencies": {
     "@types/node": "^8.0.0",
